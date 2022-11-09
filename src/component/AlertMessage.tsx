@@ -6,14 +6,13 @@ import {
   Box,
   CloseButton,
   Button,
-  useDisclosure
 } from "@chakra-ui/react";
 
 type Props = {
   isOpen: any;
   onClose: any;
   onOpen: any;
-  status: string;
+  status: "info" | "warning" | "success" | "error" | "loading" | undefined;
 };
 
 export const AlertMessage = (props: Props) => {

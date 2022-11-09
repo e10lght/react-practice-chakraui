@@ -5,17 +5,27 @@ type Props = {
   onClose: any;
   onOpen: any;
   status: string;
+  setStatus: (status: string) => void;
 };
 
 export const TabMenu = (props: Props) => {
-  const { isOpen, onClose, onOpen } = props;
+  const { onOpen, setStatus } = props;
+
   const onClickSuccess = () => {
+    setStatus("success");
     onOpen();
   };
+
   const onClickError = () => {
+    setStatus("error");
     onOpen();
   };
-  const onClickInfo = () => {};
+
+  const onClickInfo = () => {
+    setStatus("info");
+    onOpen();
+  };
+
   return (
     <Tabs>
       <TabList>
