@@ -3,7 +3,7 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon
+  AccordionIcon,
 } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 
